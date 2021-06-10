@@ -2,84 +2,82 @@
 <html lang="en">
 <head>
     <title>Form | Class 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
 </head>
-<body background="assets/ENmtT2.jpeg">
+<body>
 
     <!-- Data Diri -->
     <div class="container">
-        <!-- h1 Name -->
-        <h1>Braja</h1>
 
-        <!-- Summary -->
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Saya suka ngoding.</p>
+        <div class="data">
+            <!-- h1 Name -->
+            <h1>Braja</h1>
 
-          <!-- Telp -->
-        <div>
-            <img src="assets/telephone.png">
-            <span>083896833122</span>
+            <!-- Summary -->
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Saya suka ngoding.</p>
+
+            <!-- Telp -->
+            <div>
+                <img src="assets/telephone.png">
+                <span class="text">083896833122</span>
+            </div>
+
+            <br>
+
+            <div>
+                <img src="assets/email.png">
+                <span class="text">braja@dumbways.id</span>
+            </div>
+
+            <br>
+
+            <div>
+                <img src="assets/address.png">
+                <span class="text">
+                    Jl.elang IV, Sawah Lama, Kec.Ciputat, Kota Tangerang Selatan, Banten 15413
+                </span>
+            </div>
         </div>
-
-        <br>
-
-        <div>
-            <img src="assets/email.png">
-            <span>braja@dumbways.id</span>
-        </div>
-
-        <br>
-
-        <div>
-            <img src="assets/address.png">
-            <span>
-                Jl.elang IV, Sawah Lama, Kec.Ciputat, Kota Tangerang Selatan, Banten 15413
-            </span>
-        </div>
-    </div>
-
     <!-- Form Input Data Diri -->
     <br><br>
-    <div>
-        <h3>Input Your Data</h3>
+    <div class="form-input">
+        <div class="card">
+            <form>
+                <h3>Input Your Data</h3>
 
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </div>
+                <div class="group-input first-group-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
 
-            <br>
+                <div class="group-input">
+                    <label for="summary">Summary</label>
+                    <textarea id="summary" cols="30" rows="10"></textarea>
+                </div>
 
-        <div>
-            <label for="summary">Summary</label>
-            <textarea id="summary" cols="30" rows="10"></textarea>
-        </div>
+                <div class="group-input">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
+                </div>
 
-            <br>
+                <div class="group-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
 
-        <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone">
-        </div>
+                <div class="group-input">
+                    <label for="address">Address</label>
+                    <textarea  id="address" cols="30" rows="10"></textarea>
+                </div>
+                    
+                <div class="btn-submit">
+                    <button type="submit">Generate</button>
 
-            <br>
-
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
-
-            <br>
-
-        <div>
-            <label for="address">Address</label>
-            <textarea  id="address" cols="30" rows="10"></textarea>
-        </div>
-            <br><br>
-        <div>
-            <button>Generate</button>
-
-            <button>Clear</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 </body>
 </html>
